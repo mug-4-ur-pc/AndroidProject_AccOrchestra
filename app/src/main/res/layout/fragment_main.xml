@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainFragment"
+    android:background="@drawable/main_background">
+
+    <com.m4up.accorchestra.ui.GradientTextView
+        android:id="@+id/solo_button"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="10dp"
+
+        android:background="@color/transparent"
+        android:text="@string/solo"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:textStartColor="@color/gradient_start"
+        app:textCenterColor="@color/gradient_center"
+        app:textFinishColor="@color/gradient_finish"
+
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="200dp"
+        app:autoSizeMinTextSize="20dp"
+        app:autoSizeStepGranularity="5dp"
+        tools:ignore="SpUsage" />
+
+    <com.m4up.accorchestra.ui.GradientTextView
+        android:id="@+id/orchestra_button"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="10dp"
+
+        android:background="@color/transparent"
+        android:text="@string/orchestra"
+        android:maxLines="1"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:textStartColor="@color/gradient_start"
+        app:textCenterColor="@color/gradient_center"
+        app:textFinishColor="@color/gradient_finish"
+
+        app:autoSizeTextType="uniform"
+        app:autoSizeMaxTextSize="200dp"
+        app:autoSizeMinTextSize="20dp"
+        app:autoSizeStepGranularity="5dp"
+        tools:ignore="SpUsage" />
+
+    <com.m4up.accorchestra.ui.GradientImageButton
+        android:id="@+id/help_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="30dp"
+
+        app:startColor="@color/gradient_start"
+        app:centerColor="@color/gradient_center"
+        app:finishColor="@color/gradient_finish"
+
+        app:viewportWidth="24"
+        app:viewportHeight="24"
+        app:pathData="@string/question_icon_path" />
+
+    <com.m4up.accorchestra.ui.GradientImageButton
+        android:id="@+id/settings_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="75dp"
+        android:layout_marginStart="30dp"
+
+        app:startColor="@color/gradient_start"
+        app:centerColor="@color/gradient_center"
+        app:finishColor="@color/gradient_finish"
+
+        app:viewportWidth="24"
+        app:viewportHeight="24"
+        app:pathData="@string/setting_icon_path" />
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="155dp"
+        app:layout_constraintEnd_toStartOf="@id/help_button"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/main_gradient"/>
+
+    <View
+        android:id="@+id/top_horizontal_line"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        app:layout_constraintEnd_toStartOf="@id/help_button"
+        app:layout_constraintTop_toBottomOf="@id/solo_button"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/main_gradient"/>
+
+    <View
+        android:id="@+id/long_vertical"
+        android:layout_width="5dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/settings_button"
+        app:layout_constraintTop_toBottomOf="@id/top_horizontal_line"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/main_gradient"/>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        app:layout_constraintStart_toEndOf="@id/long_vertical"
+        app:layout_constraintBottom_toTopOf="@id/orchestra_button"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/main_gradient"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

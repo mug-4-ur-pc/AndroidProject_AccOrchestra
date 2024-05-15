@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AccOrchestra</string>
+    <string name="solo">ΣΌΛΟ</string>
+    <string name="orchestra">ΟΡΧΉΣΤΡΑ</string>
+    <string name="help_button">Βοήθεια</string>
+    <string name="settings_button">Ρυθμίσεις</string>
+    <string name="messages_header">Γενικά</string>
+    <string name="language_word">Γλώσσα</string>
+    <string name="select_language">Επιλέξτε γλώσσα</string>
+    <string name="sound_tone">Ηχητικός τόνος</string>
+    <string name="location_choose_description">Επιλέξτε την τοποθεσία που θα χρησιμοποιηθεί για τη ρύθμιση του ηχητικού σας τόνου</string>
+</resources>

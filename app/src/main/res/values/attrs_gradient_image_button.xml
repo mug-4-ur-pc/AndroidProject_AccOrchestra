@@ -1,0 +1,11 @@
+<resources>
+    <declare-styleable name="GradientImageButton">
+        <attr name="startColor" format="color" />
+        <attr name="centerColor" format="color" />
+        <attr name="finishColor" format="color" />
+
+        <attr name="viewportWidth" format="float" />
+        <attr name="viewportHeight" format="float" />
+        <attr name="pathData" format="string" />
+    </declare-styleable>
+</resources>
